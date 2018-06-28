@@ -11,7 +11,9 @@ import kotlinx.android.synthetic.main.list_news.view.*
 /**
  * Created by Sid on 27/06/2018.
  */
+
 class NewsViewHolder(itemView: View, private val listener: OnNewsViewHolderInteraction) : RecyclerView.ViewHolder(itemView), NewsViewHolderMvp.View {
+
 
     interface OnNewsViewHolderInteraction {
         fun onNewsClicked(newsTitle: String)
@@ -25,15 +27,11 @@ class NewsViewHolder(itemView: View, private val listener: OnNewsViewHolderInter
     }
 
     override fun setTitle(title: String) {
-        itemView.newsName.text = title
+        itemView.newsTitle.text = title
     }
 
-    override fun setPrice(price: String) {
-        itemView.newsPrice.text = price
-    }
-
-    override fun setFuelType(fuelType: String) {
-        itemView.newsFuelType.text = fuelType
+    override fun setByLine(byLine: String) {
+        itemView.newsByLine.text = byLine
     }
 
     override fun setNewsImage(newsImageUrl: String) {
@@ -41,6 +39,7 @@ class NewsViewHolder(itemView: View, private val listener: OnNewsViewHolderInter
         val transformation = RoundedCornersTransformation(imageCorner, 0, RoundedCornersTransformation.CornerType.LEFT)
         Picasso.get()
                 .load(newsImageUrl)
+                .placeholder(R.drawable.place_holder)
                 .transform(transformation)
                 .into(itemView.newsImage, object : Callback {
                     override fun onSuccess() {

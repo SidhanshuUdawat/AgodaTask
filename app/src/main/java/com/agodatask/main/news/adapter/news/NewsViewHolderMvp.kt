@@ -6,8 +6,7 @@ package com.agodatask.main.news.adapter.news
 class NewsViewHolderMvp {
     interface View {
         fun setTitle(title: String)
-        fun setPrice(price: String)
-        fun setFuelType(fuelType: String)
+        fun setByLine(byLine: String)
         fun setNewsImage(newsImageUrl: String)
         fun setNewsImage(fallbackImageId: Int)
         fun showProgress()

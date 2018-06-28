@@ -10,22 +10,34 @@ import com.agodatask.datasets.NewsMultimedia
 class NewsViewHolderPresenter(val view: NewsViewHolderMvp.View) {
 
     companion object {
-        const val MAX_IMAGE_DIMEN = "640"
+        const val IMAGE_FORMAT = "thumbLarge"
+
     }
 
     lateinit var newsEntity: NewsEntity
 
     fun init(newsViewModel: NewsViewModel) {
         newsEntity = newsViewModel.newsEntity
+
+        val newsImageUrl = getNewsImageUrl(newsEntity)
+        if (newsImageUrl.isNotEmpty()) {
+            view.setNewsImage(newsImageUrl)
+        } else {
+            showFallBackImage()
+        }
+        view.setTitle(newsEntity.title)
+        newsEntity.byline?.let { byLine ->
+            view.setByLine(byLine)
+        }
     }
 
     /**
-     * Api provides list of images to display and their order is not always correct
+     * Api provides list of images to display and their may not always be correct
      * in order to display the most optimum image to display list is filter using dimension as 640
      */
     fun getNewsImageUrl(newsEntity: NewsEntity): String {
         return if (newsEntity.multimedia != null && newsEntity.multimedia.isNotEmpty()) {
-            val imageURL = newsEntity.multimedia.filter { image -> image.url.contains(MAX_IMAGE_DIMEN) }
+            val imageURL = newsEntity.multimedia.filter { image -> image.format.toLowerCase().contentEquals(IMAGE_FORMAT.toLowerCase()) }
             if (imageURL.isNotEmpty()) {
                 imageURL[0].url
             } else {
@@ -37,7 +49,7 @@ class NewsViewHolderPresenter(val view: NewsViewHolderMvp.View) {
     }
 
     private fun showFallBackImage() {
-        view.setNewsImage(R.drawable.no_image_available)
+        view.setNewsImage(R.drawable.place_holder)
         view.hideProgress()
     }
 
