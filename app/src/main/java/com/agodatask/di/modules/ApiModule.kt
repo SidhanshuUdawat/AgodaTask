@@ -1,5 +1,7 @@
 package com.agodatask.di.modules
 
+import com.agodatask.datasets.NewsEntity
+import com.agodatask.utils.GsonArrayAdapterFactory
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -21,7 +23,8 @@ class ApiModule(private val baseUrl: String) {
     @Provides
     @Singleton
     fun provideGson(): Gson {
-        return GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").create()
+        return GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
+                .registerTypeAdapter(NewsEntity::class.java, NewsEntity.createMediaDeserializer()).create()
     }
 
     @Provides

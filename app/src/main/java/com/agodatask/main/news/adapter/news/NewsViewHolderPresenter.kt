@@ -2,6 +2,7 @@ package com.agodatask.main.news.adapter.news
 
 import com.agodatask.R
 import com.agodatask.datasets.NewsEntity
+import com.agodatask.datasets.NewsMultimedia
 
 /**
  * Created by Sid on 27/06/2018.

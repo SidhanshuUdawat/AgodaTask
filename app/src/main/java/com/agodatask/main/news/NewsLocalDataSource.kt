@@ -1,6 +1,7 @@
 package com.agodatask.main.news
 
 import com.agodatask.datasets.NewsEntity
+import com.agodatask.datasets.NewsMultimedia
 import com.agodatask.model.RealmMultimedia
 import com.agodatask.model.RealmNews
 import com.agodatask.realm.RealmMvp
@@ -46,16 +47,18 @@ class NewsLocalDataSource(private val realmManager: RealmMvp, private val pref: 
     /**
      * Saves News
      */
-    override fun storeNews(newsEntity: NewsEntity) {
-        val realmNewsToStore = createRealmNews(newsEntity)
+    override fun storeNews(newsList: List<NewsEntity>) {
         val realm = realmManager.realm
         try {
-            realm.executeTransaction({
-                val realmNews = realm.where(RealmNews::class.java).findFirst()
-                realmNews.let {
-                    realm.copyToRealmOrUpdate(realmNewsToStore)
-                }
-            })
+            for (newsEntity in newsList) {
+                val realmNewsToStore = createRealmNews(newsEntity)
+                realm.executeTransaction({
+                    val realmNews = realm.where(RealmNews::class.java).findFirst()
+                    realmNews.let {
+                        realm.copyToRealmOrUpdate(realmNewsToStore)
+                    }
+                })
+            }
             pref.putBooleanData(IS_LOCAL_DATA_SAVED, true)
         } finally {
             realmManager.closeRealm(realm)

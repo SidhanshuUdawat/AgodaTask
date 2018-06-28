@@ -29,6 +29,6 @@ open class RealmNews(var section: String = "",
         for (realmImages in this.multimedia) {
             multimedia.add(realmImages.asMultimediaModel())
         }
-        return NewsEntity(section, title, abstract, url, byline, item_type, material_type_facet, published_date, multimedia as Object)
+        return NewsEntity(section, title, abstract, url, byline, item_type, material_type_facet, published_date, multimedia)
     }
 }

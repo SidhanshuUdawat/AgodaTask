@@ -16,24 +16,15 @@ class NewsInteractor(private val remoteDataSource: NewsMvp.RemoteDataSource,
     override fun getNews(): Observable<List<NewsEntity>> {
         return when {
             networkMonitorProvider.isConnected() -> remoteDataSource.getNews()
-                    .flatMap { newsModel ->
-                        if (newsModel.results.isNotEmpty()) {
-                            localDataSource.deleteLocalData()
-                            storeNews(newsModel.results)
-                            Observable.just(newsModel.results)
-                        } else {
-                            Observable.empty()
-                        }
+                    .doOnNext {
+                        localDataSource.deleteLocalData()
+                        localDataSource.storeNews(it.results)
+                    }
+                    .flatMap {
+                        Observable.just(it.results)
                     }
             localDataSource.hasLocalData() -> localDataSource.getNews()
             else -> Observable.just(null)
         }
-    }
-
-    private fun storeNews(newsList: List<NewsEntity>) {
-        Observable.from(newsList)
-                .doOnNext { news ->
-                    localDataSource.storeNews(news)
-                }.subscribe()
     }
 }

@@ -33,7 +33,7 @@ class NewsMvp {
     interface LocalDataSource {
         fun hasLocalData(): Boolean
         fun deleteLocalData()
-        fun storeNews(news: NewsEntity)
+        fun storeNews(news: List<NewsEntity>)
         fun getNews(): Observable<List<NewsEntity>>
         fun getNews(newsTitle: String): Observable<NewsEntity>
     }
