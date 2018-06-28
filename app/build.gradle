@@ -16,7 +16,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.agodatask.CustomTestRunner"
     }
     buildTypes {
         release {
@@ -88,4 +88,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.squareup.okhttp3', module: 'okhttp'
     }
+
+    androidTestImplementation 'com.agoda.kakao:kakao:1.3.0'
 }

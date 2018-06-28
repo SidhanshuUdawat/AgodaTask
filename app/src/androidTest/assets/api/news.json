@@ -1,0 +1,353 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2015 The New York Times Company. All Rights Reserved.",
+  "section": "technology",
+  "last_updated": "2015-08-18T10:15:06-05:00",
+  "num_results": 24,
+  "results": [
+    {
+      "section": "Business Day",
+      "subsection": "",
+      "title": "Work Policies May Be Kinder, but Brutal Competition Isn’t",
+      "abstract": "Top-tier employers may be changing their official policies in a nod to work-life balance, but brutal competition remains an inescapable component of workers’ daily lives.",
+      "url": "http://www.nytimes.com/2015/08/18/business/work-policies-may-be-kinder-but-brutal-competition-isnt.html",
+      "byline": "By NOAM SCHEIBER",
+      "item_type": "Article",
+      "updated_date": "2015-08-17T22:10:02-5:00",
+      "created_date": "2015-08-17T22:10:04-5:00",
+      "published_date": "2015-08-18T04:00:00-5:00",
+      "material_type_facet": "News",
+      "kicker": "",
+      "des_facet": [
+        "Workplace Environment",
+        "Executives and Management (Theory)",
+        "Paid Time Off",
+        "Legal Profession",
+        "Banking and Financial Institutions",
+        "Computers and the Internet"
+      ],
+      "org_facet": [
+        "Amazon.com Inc",
+        "Cravath Swaine & Moore"
+      ],
+      "per_facet": [
+        "Bezos, Jeffrey P"
+      ],
+      "geo_facet": [
+        "Silicon Valley (Calif)"
+      ],
+      "multimedia": [
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18EMPLOY/18EMPLOY-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "People eating at the Brave Horse Tavern on the Amazon campus in Seattle in June.",
+          "copyright": "Matthew Ryan Williams for The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18EMPLOY/18EMPLOY-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "People eating at the Brave Horse Tavern on the Amazon campus in Seattle in June.",
+          "copyright": "Matthew Ryan Williams for The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18EMPLOY/18EMPLOY-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "People eating at the Brave Horse Tavern on the Amazon campus in Seattle in June.",
+          "copyright": "Matthew Ryan Williams for The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18EMPLOY/18EMPLOY-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "People eating at the Brave Horse Tavern on the Amazon campus in Seattle in June.",
+          "copyright": "Matthew Ryan Williams for The New York Times"
+        }
+      ]
+    },
+    {
+      "section": "Technology",
+      "subsection": "",
+      "title": "Depiction of Amazon Stirs a Debate About Work Culture",
+      "abstract": "Details of working conditions at Amazon led to a response from employees, relatives and friends.",
+      "url": "http://www.nytimes.com/2015/08/19/technology/amazon-workplace-reactions-comments.html",
+      "byline": "By THE NEW YORK TIMES",
+      "item_type": "Article",
+      "updated_date": "2015-08-18T07:35:33-5:00",
+      "created_date": "2015-08-18T07:35:35-5:00",
+      "published_date": "2015-08-19T04:00:00-5:00",
+      "material_type_facet": "News",
+      "kicker": "",
+      "des_facet": [
+        "Workplace Environment"
+      ],
+      "org_facet": [
+        "Amazon.com Inc"
+      ],
+      "per_facet": "",
+      "geo_facet": "",
+      "multimedia": [
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-AUYG/13amazon-selects-slide-AUYG-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon is building new offices in Seattle and, in about three years, will have enough space for about 50,000 employees.",
+          "copyright": "Ruth Fremson/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-AUYG/13amazon-selects-slide-AUYG-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon is building new offices in Seattle and, in about three years, will have enough space for about 50,000 employees.",
+          "copyright": "Ruth Fremson/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-AUYG/13amazon-selects-slide-AUYG-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon is building new offices in Seattle and, in about three years, will have enough space for about 50,000 employees.",
+          "copyright": "Ruth Fremson/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-AUYG/13amazon-selects-slide-AUYG-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon is building new offices in Seattle and, in about three years, will have enough space for about 50,000 employees.",
+          "copyright": "Ruth Fremson/The New York Times"
+        }
+      ]
+    },
+    {
+      "section": "Technology",
+      "subsection": "",
+      "title": "Jeff Bezos and Amazon Employees Join Debate Over Its Culture",
+      "abstract": "The company’s chief told employees that he didn’t recognize the “soulless, dystopian workplace” that he said was depicted in a New York Times article.",
+      "url": "http://www.nytimes.com/2015/08/18/technology/amazon-bezos-workplace-management-practices.html",
+      "byline": "By DAVID STREITFELD and JODI KANTOR",
+      "item_type": "Article",
+      "updated_date": "2015-08-17T20:48:16-5:00",
+      "created_date": "2015-08-17T09:11:16-5:00",
+      "published_date": "2015-08-18T04:00:00-5:00",
+      "material_type_facet": "News",
+      "kicker": "",
+      "des_facet": [
+        "Workplace Environment",
+        "Computers and the Internet"
+      ],
+      "org_facet": [
+        "Amazon.com Inc"
+      ],
+      "per_facet": [
+        "Bezos, Jeffrey P"
+      ],
+      "geo_facet": "",
+      "multimedia": [
+        {
+          "url": "http://static01.nyt.com/images/2015/08/17/nytnow/18amazon/18amazon-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jeff Bezos, chief executive of Amazon, encouraged employees to report “callous” management practices.",
+          "copyright": "David Ryder/Getty Images"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/17/nytnow/18amazon/18amazon-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jeff Bezos, chief executive of Amazon, encouraged employees to report “callous” management practices.",
+          "copyright": "David Ryder/Getty Images"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/17/nytnow/18amazon/18amazon-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jeff Bezos, chief executive of Amazon, encouraged employees to report “callous” management practices.",
+          "copyright": "David Ryder/Getty Images"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/17/nytnow/18amazon/18amazon-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jeff Bezos, chief executive of Amazon, encouraged employees to report “callous” management practices.",
+          "copyright": "David Ryder/Getty Images"
+        }
+      ]
+    },
+    {
+      "section": "Business Day",
+      "subsection": "",
+      "title": "Inside Amazon: Wrestling Big Ideas in a Bruising Workplace",
+      "abstract": "The company is conducting an experiment in how far it can push white-collar workers to get them to achieve its ever-expanding ambitions.",
+      "url": "http://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html",
+      "byline": "By JODI KANTOR and DAVID STREITFELD",
+      "item_type": "Article",
+      "updated_date": "2015-08-17T21:43:20-5:00",
+      "created_date": "2015-08-15T08:00:05-5:00",
+      "published_date": "2015-08-16T04:00:00-5:00",
+      "material_type_facet": "News",
+      "kicker": "",
+      "des_facet": [
+        "Computers and the Internet",
+        "Labor and Jobs",
+        "Executives and Management (Theory)",
+        "Workplace Environment"
+      ],
+      "org_facet": [
+        "Amazon.com Inc"
+      ],
+      "per_facet": [
+        "Bezos, Jeffrey P"
+      ],
+      "geo_facet": "",
+      "multimedia": [
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-ZSZ3/13amazon-selects-slide-ZSZ3-thumbStandard-v2.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon employees on a lunch break. Many employees say they spend hours working at home most nights or on weekends.",
+          "copyright": "Ruth Fremson/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-ZSZ3/13amazon-selects-slide-ZSZ3-thumbLarge-v2.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon employees on a lunch break. Many employees say they spend hours working at home most nights or on weekends.",
+          "copyright": "Ruth Fremson/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-ZSZ3/13amazon-selects-slide-ZSZ3-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon employees on a lunch break. Many employees say they spend hours working at home most nights or on weekends.",
+          "copyright": "Ruth Fremson/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/13/business/13amazon-selects-slide-ZSZ3/13amazon-selects-slide-ZSZ3-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Amazon employees on a lunch break. Many employees say they spend hours working at home most nights or on weekends.",
+          "copyright": "Ruth Fremson/The New York Times"
+        }
+      ]
+    },
+    {
+      "section": "Technology",
+      "subsection": "",
+      "title": "Data-Crunching Is Coming to Help Your Boss Manage Your Time",
+      "abstract": "Employers of all types are using a wide range of technological tools to monitor workers’ efforts and motivate them.",
+      "url": "http://www.nytimes.com/2015/08/18/technology/data-crunching-is-coming-to-help-your-boss-manage-your-time.html",
+      "byline": "By DAVID STREITFELD",
+      "item_type": "Article",
+      "updated_date": "2015-08-17T05:00:05-5:00",
+      "created_date": "2015-08-17T05:00:06-5:00",
+      "published_date": "2015-08-18T04:00:00-5:00",
+      "material_type_facet": "News",
+      "kicker": "",
+      "des_facet": [
+        "Productivity",
+        "Data-Mining and Database Marketing",
+        "Human Resources",
+        "Workplace Environment",
+        "Executives and Management (Theory)"
+      ],
+      "org_facet": [
+        "BetterWorks Inc",
+        "Workday Inc",
+        "Timesheets.com"
+      ],
+      "per_facet": "",
+      "geo_facet": "",
+      "multimedia": [
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18workplace-web/18workplace-web-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Myrna Arias, a saleswoman for Intermex, a money-transfer company, has claimed in a lawsuit that she was required to download an app on her cellphone that tracked her whereabouts 24 hours a day.",
+          "copyright": "Monica Almeida/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18workplace-web/18workplace-web-thumbLarge.jpg",
+          "format": "thumbLarge",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Myrna Arias, a saleswoman for Intermex, a money-transfer company, has claimed in a lawsuit that she was required to download an app on her cellphone that tracked her whereabouts 24 hours a day.",
+          "copyright": "Monica Almeida/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18workplace-web/18workplace-web-articleInline.jpg",
+          "format": "Normal",
+          "height": 127,
+          "width": 190,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Myrna Arias, a saleswoman for Intermex, a money-transfer company, has claimed in a lawsuit that she was required to download an app on her cellphone that tracked her whereabouts 24 hours a day.",
+          "copyright": "Monica Almeida/The New York Times"
+        },
+        {
+          "url": "http://static01.nyt.com/images/2015/08/18/business/18workplace-web/18workplace-web-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Myrna Arias, a saleswoman for Intermex, a money-transfer company, has claimed in a lawsuit that she was required to download an app on her cellphone that tracked her whereabouts 24 hours a day.",
+          "copyright": "Monica Almeida/The New York Times"
+        }
+      ]
+    }
+  ]
+}
