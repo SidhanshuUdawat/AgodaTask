@@ -5,7 +5,7 @@ import com.agodatask.main.news.NewsLocalDataSource
 import com.agodatask.main.news.NewsMvp
 import com.agodatask.main.news.NewsPresenter
 import com.agodatask.main.news.NewsRemoteDataSource
-import com.agodatask.main.news.adapter.NewsInteractor
+import com.agodatask.main.news.NewsInteractor
 import com.agodatask.network.NetworkMonitorProvider
 import com.agodatask.realm.RealmManager
 import com.agodatask.sharedpref.SharedPreferencesProvider

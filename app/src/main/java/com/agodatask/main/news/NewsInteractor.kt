@@ -1,4 +1,4 @@
-package com.agodatask.main.news.adapter
+package com.agodatask.main.news
 
 import com.agodatask.datasets.NewsEntity
 import com.agodatask.main.news.NewsMvp
