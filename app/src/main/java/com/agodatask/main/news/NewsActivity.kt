@@ -12,6 +12,7 @@ import com.agodatask.di.modules.NewsModule
 import com.agodatask.main.news.adapter.ListItem
 import com.agodatask.main.news.adapter.NewsListAdapter
 import com.agodatask.main.news.adapter.RecyclerViewDecorator
+import com.agodatask.main.news.detail.NewsDetailActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
@@ -118,7 +119,7 @@ class NewsActivity : AppCompatActivity(), NewsMvp.View {
     }
 
     override fun showMoreDetails(newsTitle: String) {
-        /*val intent = VehicleDetailActivity.getIntent(this, vehicleId)
-        startActivity(intent)*/
+        val intent = NewsDetailActivity.getIntent(this, newsTitle)
+        startActivity(intent)
     }
 }
