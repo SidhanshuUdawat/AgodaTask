@@ -13,7 +13,7 @@ import java.util.*
 
 open class RealmNews(var section: String = "",
                      var title: String = "",
-                     var abstract: String = "",
+                     var information: String = "",
                      var url: String? = "",
                      var byline: String? = "",
                      var item_type: String = "",
@@ -29,6 +29,6 @@ open class RealmNews(var section: String = "",
         for (realmImages in this.multimedia) {
             multimedia.add(realmImages.asMultimediaModel())
         }
-        return NewsEntity(section, title, abstract, url, byline, item_type, material_type_facet, published_date, multimedia)
+        return NewsEntity(section, title, information, url, byline, item_type, material_type_facet, published_date, multimedia)
     }
 }

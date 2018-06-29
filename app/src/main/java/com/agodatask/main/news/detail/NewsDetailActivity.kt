@@ -8,6 +8,8 @@ import android.view.MenuItem
 import android.view.View
 import com.agodatask.AgodaApplication
 import com.agodatask.R
+import com.agodatask.di.components.DaggerNewsDetailComponent
+import com.agodatask.di.modules.NewsDetailModule
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_news_detail.*
@@ -32,13 +34,8 @@ class NewsDetailActivity : AppCompatActivity(), NewsDetailMvp.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_detail)
-    }
-
-    private fun injectDependencies() {
-        val vehicleId = intent.getIntExtra(NEWS_TITLE, 0)
-        val applicationComponent = (applicationContext as AgodaApplication).getApplicationComponent()
-
-        presenter.init()
+        initToolbar()
+        injectDependencies()
     }
 
     private fun initToolbar() {
@@ -54,6 +51,17 @@ class NewsDetailActivity : AppCompatActivity(), NewsDetailMvp.View {
         return super.onOptionsItemSelected(item)
     }
 
+    private fun injectDependencies() {
+        val newsTitle = intent.getStringExtra(NEWS_TITLE)
+        val applicationComponent = (applicationContext as AgodaApplication).getApplicationComponent()
+
+        DaggerNewsDetailComponent.builder()
+                .applicationBaseComponent(applicationComponent)
+                .newsDetailModule(NewsDetailModule(this, newsTitle))
+                .build().inject(this)
+
+        presenter.init()
+    }
 
     override fun setNewsTitle(title: String) {
         newsTitleTxt.text = title
@@ -64,14 +72,24 @@ class NewsDetailActivity : AppCompatActivity(), NewsDetailMvp.View {
                 .load(newsImageUrl)
                 .into(newsImage, object : Callback {
                     override fun onSuccess() {
-
+                        presenter.onImageLoadingSuccess()
                     }
 
                     override fun onError(e: Exception?) {
-
+                        presenter.onImageLoadingFailed()
                     }
 
                 })
+    }
+
+    override fun setNewsImage(newsImageId: Int) {
+        Picasso.get()
+                .load(newsImageId)
+                .into(newsImage)
+    }
+
+    override fun setNewsDetails(detail: String) {
+        newsInformationTxt.text = detail
     }
 
     override fun showNewsImage() {
@@ -88,9 +106,5 @@ class NewsDetailActivity : AppCompatActivity(), NewsDetailMvp.View {
 
     override fun hideProgress() {
         progressBar.visibility = View.GONE
-    }
-
-    override fun setNewsDetails(detail: String) {
-
     }
 }

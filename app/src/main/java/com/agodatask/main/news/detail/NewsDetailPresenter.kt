@@ -1,5 +1,6 @@
 package com.agodatask.main.news.detail
 
+import com.agodatask.R
 import com.agodatask.datasets.NewsEntity
 import com.agodatask.utils.MultimediaUtil
 import rx.Observer
@@ -13,7 +14,7 @@ import rx.subscriptions.CompositeSubscription
 class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val interactor: NewsDetailMvp.Interactor) {
 
     companion object {
-        const val IMAGE_FORMAT = "thumbLarge"
+        const val IMAGE_FORMAT = "mediumThreeByTwo210"
     }
 
     private val compositeSubscription = CompositeSubscription()
@@ -49,8 +50,21 @@ class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val inte
             view.showNewsImage()
             view.setNewsImage(newsImageUrl)
         } else {
-            view.hideNewsImage()
+            showFallBackImage()
         }
         view.setNewsDetails(newsEntity.information)
+    }
+
+    private fun showFallBackImage() {
+        view.setNewsImage(R.drawable.place_holder)
+        view.hideProgress()
+    }
+
+    fun onImageLoadingSuccess() {
+        view.hideProgress()
+    }
+
+    fun onImageLoadingFailed() {
+        view.hideProgress()
     }
 }

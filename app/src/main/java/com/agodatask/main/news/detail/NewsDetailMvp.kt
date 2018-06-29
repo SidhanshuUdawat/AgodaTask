@@ -12,6 +12,7 @@ interface NewsDetailMvp {
     interface View {
         fun setNewsTitle(title: String)
         fun setNewsImage(newsImageUrl: String)
+        fun setNewsImage(fallbackImageId: Int)
         fun showNewsImage()
         fun hideNewsImage()
         fun setNewsDetails(detail: String)

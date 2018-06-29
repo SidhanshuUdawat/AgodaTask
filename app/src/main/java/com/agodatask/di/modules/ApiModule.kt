@@ -1,7 +1,6 @@
 package com.agodatask.di.modules
 
 import com.agodatask.datasets.NewsEntity
-import com.agodatask.utils.GsonArrayAdapterFactory
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
