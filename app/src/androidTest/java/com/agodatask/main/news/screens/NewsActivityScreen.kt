@@ -12,7 +12,7 @@ import org.hamcrest.Matcher
  * Created by Sid on 28/06/2018.
  */
 
-open class TestRecyclerScreen : Screen<TestRecyclerScreen>() {
+open class NewsActivityScreen : Screen<NewsActivityScreen>() {
     val recycler: KRecyclerView = KRecyclerView({
         withId(R.id.newsRecyclerView)
     }, itemTypeBuilder = {
