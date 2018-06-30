@@ -11,6 +11,7 @@ import rx.subscriptions.CompositeSubscription
 /**
  * Created by Sid on 30/06/2018.
  */
+
 class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val interactor: NewsDetailMvp.Interactor) {
 
     private val compositeSubscription = CompositeSubscription()
