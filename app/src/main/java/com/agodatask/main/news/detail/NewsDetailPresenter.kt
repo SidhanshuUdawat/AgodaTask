@@ -15,6 +15,7 @@ import rx.subscriptions.CompositeSubscription
 class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val interactor: NewsDetailMvp.Interactor) {
 
     private val compositeSubscription = CompositeSubscription()
+    private lateinit var newsEntity: NewsEntity
 
     fun init() {
         getNewsData()
@@ -40,6 +41,8 @@ class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val inte
     }
 
     fun onFetchingNewsSuccess(newsEntity: NewsEntity) {
+        this.newsEntity = newsEntity
+
         view.setNewsTitle(newsEntity.title)
 
         val newsImageUrl = MultimediaUtil.getNewsImageUrl(newsEntity.multimedia, MultimediaUtil.IMAGE_FORMAT_MEDIUM_THREE)
@@ -63,5 +66,15 @@ class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val inte
 
     fun onImageLoadingFailed() {
         view.hideProgress()
+    }
+
+    fun onNewsFullStoryClicked() {
+        newsEntity?.let {
+            if (it.url != null) {
+                view.showFullStory(it.url)
+            } else {
+                view.showError(R.string.full_story_not_available)
+            }
+        }
     }
 }

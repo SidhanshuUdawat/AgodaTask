@@ -18,6 +18,8 @@ interface NewsDetailMvp {
         fun setNewsDetails(detail: String)
         fun showProgress()
         fun hideProgress()
+        fun showFullStory(url: String)
+        fun showError(errorId: Int)
     }
 
     interface Interactor {

@@ -3,5 +3,6 @@
     <string name="oops_something_went_wrong_try_again">Oops, something went wrong. Try again</string>
     <string name="advert_text">Your advert appears here !</string>
     <string name="details">Details</string>
-    <string name="full_story">FULL STORY</string>
+    <string name="full_story">Full Story</string>
+    <string name="full_story_not_available">Sorry, full story is not available</string>
 </resources>

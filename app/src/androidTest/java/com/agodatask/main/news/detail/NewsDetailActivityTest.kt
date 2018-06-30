@@ -136,7 +136,7 @@ class NewsDetailActivityTest {
 
             fullStoryButton {
                 isVisible()
-                withText("FULL STORY")
+                withText("Full Story")
             }
         }
 

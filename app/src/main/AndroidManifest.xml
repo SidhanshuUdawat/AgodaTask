@@ -29,6 +29,12 @@
             android:label="@string/details"
             android:screenOrientation="portrait"
             android:theme="@style/NavolutionAppCompatTheme" />
+
+        <activity
+            android:name=".main.news.webview.WebViewActivity"
+            android:label="@string/full_story"
+            android:screenOrientation="portrait"
+            android:theme="@style/NavolutionAppCompatTheme" />
     </application>
 
 </manifest>

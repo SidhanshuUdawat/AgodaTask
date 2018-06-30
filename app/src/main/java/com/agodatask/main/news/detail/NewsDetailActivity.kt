@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.agodatask.AgodaApplication
 import com.agodatask.R
 import com.agodatask.di.components.DaggerNewsDetailComponent
 import com.agodatask.di.modules.NewsDetailModule
+import com.agodatask.main.news.webview.WebViewActivity
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_news_detail.*
@@ -35,12 +37,19 @@ class NewsDetailActivity : AppCompatActivity(), NewsDetailMvp.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_detail)
         initToolbar()
+        setFullStoryClickListener()
         injectDependencies()
     }
 
     private fun initToolbar() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    private fun setFullStoryClickListener() {
+        newsFullStoryBtn.setOnClickListener {
+            presenter.onNewsFullStoryClicked()
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -106,5 +115,14 @@ class NewsDetailActivity : AppCompatActivity(), NewsDetailMvp.View {
 
     override fun hideProgress() {
         progressBar.visibility = View.GONE
+    }
+
+    override fun showFullStory(url: String) {
+        val intent = WebViewActivity.getIntent(this, url)
+        startActivity(intent)
+    }
+
+    override fun showError(errorId: Int) {
+        Toast.makeText(this, getString(errorId), Toast.LENGTH_SHORT)
     }
 }
