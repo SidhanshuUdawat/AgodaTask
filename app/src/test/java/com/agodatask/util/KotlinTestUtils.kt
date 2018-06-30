@@ -1,4 +1,4 @@
-package com.agodatask
+package com.agodatask.util
 
 import org.mockito.Mockito
 

@@ -13,10 +13,6 @@ import rx.subscriptions.CompositeSubscription
  */
 class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val interactor: NewsDetailMvp.Interactor) {
 
-    companion object {
-        const val IMAGE_FORMAT = "mediumThreeByTwo210"
-    }
-
     private val compositeSubscription = CompositeSubscription()
 
     fun init() {
@@ -45,7 +41,7 @@ class NewsDetailPresenter(private val view: NewsDetailMvp.View, private val inte
     fun onFetchingNewsSuccess(newsEntity: NewsEntity) {
         view.setNewsTitle(newsEntity.title)
 
-        val newsImageUrl = MultimediaUtil.getNewsImageUrl(newsEntity.multimedia, IMAGE_FORMAT)
+        val newsImageUrl = MultimediaUtil.getNewsImageUrl(newsEntity.multimedia, MultimediaUtil.IMAGE_FORMAT_MEDIUM_THREE)
         if (newsImageUrl.isNotEmpty()) {
             view.showNewsImage()
             view.setNewsImage(newsImageUrl)

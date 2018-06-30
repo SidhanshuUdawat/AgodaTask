@@ -2,7 +2,6 @@ package com.agodatask.main.news.adapter.news
 
 import com.agodatask.R
 import com.agodatask.datasets.NewsEntity
-import com.agodatask.datasets.NewsMultimedia
 import com.agodatask.utils.MultimediaUtil
 
 /**
@@ -10,16 +9,12 @@ import com.agodatask.utils.MultimediaUtil
  */
 class NewsViewHolderPresenter(val view: NewsViewHolderMvp.View) {
 
-    companion object {
-        const val IMAGE_FORMAT = "thumbLarge"
-    }
-
     lateinit var newsEntity: NewsEntity
 
     fun init(newsViewModel: NewsViewModel) {
         newsEntity = newsViewModel.newsEntity
 
-        val newsImageUrl = MultimediaUtil.getNewsImageUrl(newsEntity.multimedia, IMAGE_FORMAT)
+        val newsImageUrl = MultimediaUtil.getNewsImageUrl(newsEntity.multimedia, MultimediaUtil.IMAGE_FORMAT_THUMB_LARGE)
         if (newsImageUrl.isNotEmpty()) {
             view.setNewsImage(newsImageUrl)
         } else {

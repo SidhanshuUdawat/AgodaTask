@@ -9,6 +9,9 @@ class MultimediaUtil {
 
     companion object {
 
+        const val IMAGE_FORMAT_THUMB_LARGE = "thumbLarge"
+        const val IMAGE_FORMAT_MEDIUM_THREE = "mediumThreeByTwo210"
+        
         /**
          * Api provides list of images to display and their may not always be correct
          * in order to display the most optimum image to display list is filter using dimension as 640
